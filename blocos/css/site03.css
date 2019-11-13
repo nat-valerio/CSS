@@ -1,0 +1,8 @@
+header,
+footer{
+    width: 100%;
+}
+
+nav{ width: 20%; }
+main{ width: 60%; }
+aside{ width: 20%; }

@@ -1,0 +1,23 @@
+body{margin: 0px;}
+
+header,
+nav,
+main,
+aside,
+footer{
+    display: flex;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+}
+
+header{ background: aqua;}
+
+nav{ background: blueviolet; }
+
+main{ background: crimson; }
+
+aside{ background: forestgreen; }
+
+footer{ background: indigo; }

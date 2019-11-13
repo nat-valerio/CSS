@@ -1,0 +1,13 @@
+#principal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header,
+aside,
+footer{
+    width: 100%;
+}
+
+nav{ width: 20%;}
+main{ width: 80%;}
