@@ -1,7 +1,6 @@
 body{margin: 0px;}
 
 header,
-nav,
 main,
 aside,
 footer{
@@ -14,10 +13,19 @@ footer{
 
 header{ background: aqua;}
 
-nav{ background: blueviolet; }
-
 main{ background: crimson; }
 
 aside{ background: forestgreen; }
 
 footer{ background: indigo; }
+
+nav{
+    display: none;
+    background: blueviolet; 
+}
+
+header img{
+    display: inline;
+    justify-content: right;
+    justify-items: right;
+}

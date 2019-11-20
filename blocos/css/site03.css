@@ -1,3 +1,11 @@
+header img{
+    display: none;
+}
+
+nav{
+    display: block;
+}
+
 header,
 footer{
     width: 100%;
