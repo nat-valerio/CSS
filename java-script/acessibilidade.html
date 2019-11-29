@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acessibilidade</title>
+</head>
+
+<body>
+    <script>
+        var ola = document.getElementById("ola");
+        if(ola == "fonte1"){
+            ola.style.fontSize = "20px";
+        }
+    </script>
+
+    <form action="">
+        <p>
+            <label for="ola" id="ola">Olá, Chone!!</label>
+        </p>
+        <select name="tamanho" id="comboTamanho" size="4">
+            <option value="fonte1">8px</option>
+            <option value="fonte2">10px</option>
+            <option value="fonte3">12px</option>
+            <option value="fonte4">14px</option>
+        </select>
+    </form>
+
+</body>
+
+</html>
