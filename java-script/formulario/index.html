@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script type="text/javascript" src="comportamento.js"></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <form>
+        <div>
+            <label for="nome">Nome: </label>
+            <input type="text" id="nome">
+        </div>
+
+        <div>
+            <label for="formSenha">Senha: </label>
+            <input type="password" id="senha">
+            <button type="button" id="btnSenha" onclick="mostraSenha('senha','btnSenha')">@</button>
+        </div>
+
+        <div>
+            <label for="confirma">Confirmar senha: </label>
+            <input type="password" id="confirma" onblur="comparaSenha()">
+            <button type="button" id="btnConfirma" onclick="mostraSenha('confirma', 'btnSenha')">@</button>
+        </div>
+
+        <div>
+            <label for="idade">Idade: </label>
+            <input type="number" id="idade">
+        </div>
+
+        <fieldset>
+            <legend>Sexo</legend>
+            
+            <input type="radio" name="feminino" value="f" checked>
+            <label for="formFeminino">Feminino</label>
+
+            <input type="radio" name="masculino" value="m">
+            <label for="formMasculino">Masculino</label>
+
+            <input type="radio" name="outro" value="o"> 
+            <label for="formOutro">Outro</label>                       
+        </fieldset>
+
+        <fieldset>
+            <legend>Áreas de interesse</legend>
+
+            <input type="checkbox" id="musica" name="areas[]" value="musica">
+            <label for="musica">Música</label>
+
+            <input type="checkbox" id="artes" name="areas[]" value="artes">
+            <label for="artes">Artes</label>
+
+            <input type="checkbox" id="esportes" name="areas[]" value="esportes">
+            <label for="esportes">Esportes</label>
+
+            <input type="checkbox" id="viagem" name="areas[]" value="viagem">
+            <label for="viagem">Viagem</label>
+
+            <input type="checkbox" id="foto" name="areas[]" value="foto">
+            <label for="foto">Fotografia</label>            
+        </fieldset>
+
+        <div>
+            <label for="cep">Cep: </label>
+            <input type="text" id="cep">
+            <label for="cep">ex.: 99999-999</label>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+
+    </form>
+
+</body>
+
+</html>

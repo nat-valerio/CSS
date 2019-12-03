@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bandas</title>
+</head>
+
+<body>
+    <script>
+        function mudaCor(){
+            var cor = document.getElementById("cor").value;
+            var lista = document.getElementsByTagName("li");
+
+            for (var i = 0; i < lista.length; i++) {
+                lista[i].style.color = cor;
+            }
+        }
+    </script>
+
+    <h1>Cores</h1>
+
+    <input type="color" id="cor" onchange="mudaCor()" />
+
+    <h1>Bandas</h1>
+    <ul>
+        <li>Kamelot</li>
+        <li>Moonsorrow</li>
+        <li>Rammstein</li>
+        <li>Nightwish</li>
+        <li>Millencolin</li>
+    </ul>
+
+</body>
+
+</html>

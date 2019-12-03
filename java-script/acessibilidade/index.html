@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Acessibilidade</title>
+</head>
+<body>
+    <script type="text/javaScript">
+        function mudaTamanho(){
+            var tamanho = document.getElementById("tamanho").value;
+            var paragrafos = document.getElementsByTagName("p");
+
+            for(var i = 0; i < paragrafos.length; i++){
+                paragrafos[i].style.fontSize = tamanho;
+            }
+        }
+    </script>
+    <p>
+        <label for="tamanho">Tamanho da fonte</label>
+        <select id="tamanho" onchange="mudaTamanho()">
+            <option value="8px">8px</option>
+            <option value="10px">10px</option>
+            <option value="12px">12px</option>
+            <option value="14px">14px</option>
+            <option value="16px">16px</option>
+            <option value="18px">18px</option>
+        </select>
+    </p>
+
+    <h1>O menino 'com 2% do cérebro' que desafia prognósticos com terapia inovadora</h1>
+    <p>Quando nasceu, os médicos disseram que ele viveria apenas alguns dias.</p>
+    <p>Agora, ele fez uma pioneira fisioterapia neurológica na Austrália, com a esperança de que algum dia ele volte a caminhar. Ele já conseguiu mexer o pé. </p>
+    <p>Todos os anos, ele distribui presentes em um hospital na Inglaterra. Nos próximos anos, ele espera fazer isso caminhando. </p>
+    
+</body>
+</html>
