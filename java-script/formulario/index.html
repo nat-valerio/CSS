@@ -11,9 +11,10 @@
 
 <body>
 
-    <form>
+    <form action="cadastro.php" method="POST" onsubmit="return validacao();"> <!--GET MOSTRA NA URL, NO POST ELE OCULTA-->
+        <p>Campos com (*) são obrigatórios.</p>
         <div>
-            <label for="nome">Nome: </label>
+            <label for="nome">Nome: *</label>
             <input type="text" id="nome">
         </div>
 
@@ -27,12 +28,13 @@
             <label for="confirma">Confirmar senha: </label>
             <input type="password" id="confirma" onblur="comparaSenha()">
             <button type="button" id="btnConfirma" onclick="mostraSenha('confirma', 'btnSenha')">@</button>
-            <label for="confirma"></label>
+            <label for="confirma" id="alert"></label>
         </div>
 
         <div>
             <label for="idade">Idade: </label>
             <input type="number" id="idade">
+            <label for="idade" id="idadeIncorreta"></label>
         </div>
 
         <fieldset>
@@ -64,7 +66,10 @@
             <label for="viagem">Viagem</label>
 
             <input type="checkbox" id="foto" name="areas[]" value="foto">
-            <label for="foto">Fotografia</label>            
+            <label for="foto">Fotografia</label>
+
+            <label for="foto" id="interMsg"></label>
+            <button type="button" onclick="visualizaArea()">Visualizar áreas selecionadas</button>            
         </fieldset>
 
         <div>
