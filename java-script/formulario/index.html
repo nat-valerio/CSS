@@ -11,7 +11,7 @@
 
 <body>
 
-    <form action="cadastro.php" method="POST" onsubmit="return validacao();"> <!--GET MOSTRA NA URL, NO POST ELE OCULTA-->
+    <form action="cadastro.html" method="POST" onsubmit="return validacao();"> <!--GET MOSTRA NA URL, NO POST ELE OCULTA-->
         <p>Campos com (*) são obrigatórios.</p>
         <div>
             <label for="nome">Nome: *</label>
@@ -40,14 +40,14 @@
         <fieldset>
             <legend>Sexo</legend>
             
-            <input type="radio" name="feminino" value="f" checked>
-            <label for="formFeminino">Feminino</label>
+            <input type="radio" id="feminino" name="feminino" value="f" checked>
+            <label for="feminino">Feminino</label>
 
-            <input type="radio" name="masculino" value="m">
-            <label for="formMasculino">Masculino</label>
+            <input type="radio" id="masculino" name="masculino" value="m">
+            <label for="masculino">Masculino</label>
 
-            <input type="radio" name="outro" value="o"> 
-            <label for="formOutro">Outro</label>                       
+            <input type="radio" id="outro" name="outro" value="o"> 
+            <label for="outro">Outro</label>                       
         </fieldset>
 
         <fieldset>

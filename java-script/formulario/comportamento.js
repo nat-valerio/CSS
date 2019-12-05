@@ -26,7 +26,7 @@ function validacao(){
 
     for(var i = 0; i < areas.length; i++){
         if(areas[i].checked) {
-            msg += "\r\n - Campo nome é de preenchimento obrigatório";
+            contador++;
         }
     }
 
@@ -41,7 +41,7 @@ function validacao(){
     if(msg == "") autorizacao = true;
     else alert("Verifique os seguintes campos: " + msg);
 
-    return false;
+    return autorizacao;
 }
 
 function visualizaArea(){
