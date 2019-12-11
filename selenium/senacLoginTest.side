@@ -1,0 +1,154 @@
+{
+  "id": "14fccee9-69dc-4c27-918d-6252fb194b93",
+  "version": "2.0",
+  "name": "senacLoginTest",
+  "url": "https://www.sp.senac.br/jsp/default.jsp?newsID=0",
+  "tests": [{
+    "id": "36e47ac2-6e72-4904-b32b-ae852ca6f02c",
+    "name": "consultaFrequencia",
+    "commands": [{
+      "id": "0a2559e2-e18d-4f6a-bc1a-2412a4926c6b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.sp.senac.br/jsp/default.jsp?newsID=0",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22e1f3b1-9410-4509-bbf3-892d4f52f01a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1600x860",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f1246ce8-05dd-4305-8932-534f9b58a46c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=login",
+      "targets": [
+        ["linkText=login", "linkText"],
+        ["css=#txtUsuarioNaoLogado > a:nth-child(1)", "css:finder"],
+        ["xpath=//a[contains(text(),'login')]", "xpath:link"],
+        ["xpath=//div[@id='txtUsuarioNaoLogado']/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://www.sp.senac.br/login/Login')]", "xpath:href"],
+        ["xpath=//div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'login')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b5d907ba-67ee-41c9-be06-d7021381982b",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f6ff1c2-4578-4ae7-99f0-be66b8281f11",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": "nat.valerio95@gmail.com"
+    }, {
+      "id": "4e5f0bd5-cc6b-48ea-84a0-3ab1d91311fc",
+      "comment": "",
+      "command": "click",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f478eacb-cce7-408c-bac7-4fb83c2484a8",
+      "comment": "",
+      "command": "type",
+      "target": "id=senha",
+      "targets": [
+        ["id=senha", "id"],
+        ["name=senha", "name"],
+        ["css=#senha", "css:finder"],
+        ["xpath=//input[@id='senha']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": "Minas@Tirith%73"
+    }, {
+      "id": "a0c58928-cc68-4063-9e01-6d2c0f9afc3b",
+      "comment": "",
+      "command": "click",
+      "target": "id=formLoginButtonSubmit",
+      "targets": [
+        ["id=formLoginButtonSubmit", "id"],
+        ["name=formLoginButtonSubmit", "name"],
+        ["css=#formLoginButtonSubmit", "css:finder"],
+        ["xpath=//button[@id='formLoginButtonSubmit']", "xpath:attributes"],
+        ["xpath=//form[@id='formLogin']/button", "xpath:idRelative"],
+        ["xpath=//form/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ad9d7a2f-b167-442f-af91-eb9fc2fd27f0",
+      "comment": "",
+      "command": "click",
+      "target": "id=item-50",
+      "targets": [
+        ["id=item-50", "id"],
+        ["linkText=Nota/menção, frequência e financeiro", "linkText"],
+        ["css=#item-50", "css:finder"],
+        ["xpath=//a[contains(text(),'Nota/menção, frequência e financeiro')]", "xpath:link"],
+        ["xpath=//a[@id='item-50']", "xpath:attributes"],
+        ["xpath=//div[@id='menu_12']/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/login-unico/SSOSenacSolution?act=ALN')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/div[2]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,' Nota/menção, frequência e financeiro')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win5533",
+      "windowTimeout": 2000
+    }, {
+      "id": "09c99929-87c8-42c0-a444-50545e6ddd2e",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win5533}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9e47ec6f-370c-4a22-894b-48c560115b0d",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Central de Alunos",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "f1401d27-24e9-4b5f-9763-41fbd4367408",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["36e47ac2-6e72-4904-b32b-ae852ca6f02c"]
+  }],
+  "urls": ["https://www.sp.senac.br/jsp/default.jsp?newsID=0"],
+  "plugins": []
+}
