@@ -1,14 +1,15 @@
-* {box-sizing:border-box}
+* { box-sizing:border-box }
 
-h1{ text-align: center;}
+h1{ text-align: center; }
 
-ul{
-    list-style-type: none;
-}
+ul{ list-style-type: none; }
+
+figure{ margin: 0px; }
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 1024px;
+  max-height: 724px;
   position: relative;
   margin: auto;
 }
@@ -63,7 +64,7 @@ ul{
   font-size: 15px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 40px;
+  bottom: 0px;
   width: 100%;
   text-align: center;
   background-color: gray;
