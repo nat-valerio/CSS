@@ -10,12 +10,6 @@ $(document).ready(function () {
     showSlides(++slideIndex);
   });
 
-  //bolinhas
-  /*
-  $(".dot").click(function(){
-    currentSlide($(this).attr("value"));
-  });*/
-
   $(".dot").click(function(){
     showSlides(slideIndex = ($(this).attr("value")));
   });
